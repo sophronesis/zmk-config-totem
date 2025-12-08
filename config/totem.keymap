@@ -118,9 +118,9 @@
 
         hollow_knight {
             bindings = <
-        &kp TAB  &kp A   &kp S   &kp D   &kp I     &trans          &kp UP_ARROW    &trans        &trans  &kp C_VOL_UP
-        &kp F    &kp Z   &kp X   &kp C   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &trans  &kp C_VOL_DN
-&trans  &trans   &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans  &trans        &trans
+        &kp TAB  &kp A   &kp S   &kp D   &kp I     &trans          &kp UP_ARROW    &trans           &trans  &kp C_VOL_UP
+        &kp F    &kp Z   &kp X   &kp C   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOL_DN
+&trans  &trans   &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans  &trans        &trans
                          &to 0   &mo 0   &trans    &trans          &trans          &trans
             >;
         };
