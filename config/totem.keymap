@@ -66,43 +66,43 @@
         to_0_layer: to_0_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &to 0>;
+            bindings = <&kp LG(F13) &to 0>;
         };
 
         to_1_layer: to_1_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F14 &to 1>;
+            bindings = <&kp LG(F14) &to 1>;
         };
 
         to_2_layer: to_2_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F15 &to 2>;
+            bindings = <&kp LG(F15) &to 2>;
         };
 
         to_3_layer: to_3_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F16 &to 3>;
+            bindings = <&kp LG(F16) &to 3>;
         };
 
         to_4_layer: to_4_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F17 &to 4>;
+            bindings = <&kp LG(F17) &to 4>;
         };
 
         to_5_layer: to_5_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F18 &to 5>;
+            bindings = <&kp LG(F18) &to 5>;
         };
 
         to_6_layer: to_6_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F19 &to 6>;
+            bindings = <&kp LG(F19) &to 6>;
         };
 
         to_7_layer: to_7_layer {
@@ -179,9 +179,9 @@
 
         misc {
             bindings = <
-        &trans  &trans  &trans  &trans       &trans    &kp C_VOL_DN          &kp C_VOL_UP  &kp C_MUTE        &kp PRINTSCREEN  &kp F13
-        &trans  &trans  &trans  &trans       &trans    &kp C_PREV            &kp C_NEXT    &kp C_PLAY_PAUSE  &trans           &kp F14
-&trans  &trans  &trans  &trans  &trans       &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP  &trans            &trans           &trans   &trans
+        &trans  &trans  &trans  &trans       &trans    &kp C_VOL_DN          &kp C_VOL_UP  &kp C_MUTE        &kp PRINTSCREEN  &trans
+        &trans  &trans  &trans  &trans       &trans    &kp C_PREV            &kp C_NEXT    &kp C_PLAY_PAUSE  &trans           &trans
+&trans  &trans  &trans  &trans  &trans       &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP  &trans            &trans           &trans  &trans
                         &trans  &to_1_layer  &trans    &trans                &to_3_layer   &trans
             >;
 
@@ -190,10 +190,10 @@
 
         hollow_knight {
             bindings = <
-        &trans  &kp TAB  &kp A   &kp S        &kp D     &trans          &kp UP_ARROW    &trans           &trans  &kp C_VOL_UP
-        &trans  &kp F    &kp Z   &kp X        &kp C     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOL_DN
-&trans  &trans  &trans   &trans  &trans       &kp I     &trans          &trans          &trans           &trans  &trans        &trans
-                         &trans  &to_2_layer  &trans    &trans          &trans          &trans
+        &trans  &kp TAB  &kp A   &kp S        &kp D     &trans  &trans          &kp UP_ARROW  &trans     &kp C_VOL_UP
+        &trans  &kp F    &kp Z   &kp X        &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp C_VOL_DN
+&trans  &trans  &trans   &trans  &trans       &kp I     &trans  &trans          &trans        &trans     &trans        &trans
+                         &trans  &to_2_layer  &trans    &trans  &none           &trans
             >;
 
             label = "HK";
@@ -227,10 +227,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &to_0_layer  &bt BT_CLR  &out OUT_TOG  &trans       &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-            &bootloader  &bt BT_NXT  &trans        &trans       &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&sys_reset  &trans       &bt BT_PRV  &trans        &trans       &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                     &trans        &to_0_layer  &trans    &trans  &trans  &trans
+        &to_0_layer  &bt BT_CLR  &out OUT_TOG  &trans       &bootloader    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &trans       &bt BT_NXT  &trans        &trans       &sys_reset     &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &bt BT_PRV  &trans        &trans       &trans         &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &to_0_layer  &trans         &trans  &trans  &trans
             >;
         };
     };
