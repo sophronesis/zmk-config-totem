@@ -61,15 +61,79 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
-        };
+
 to_0_layer: to_0_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp F13>
                 , <&to 0>;
+
+to_1_layer: to_1_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F14>
+                , <&to 1>;
+
+to_2_layer: to_2_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F15>
+                , <&to 2>;
+
+to_3_layer: to_3_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F16>
+                , <&to 3>;
+
+to_4_layer: to_4_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F17>
+                , <&to 4>;
+
+to_5_layer: to_5_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F18>
+                , <&to 5>;
+
+to_6_layer: to_6_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F19>
+                , <&to 6>;
+
+to_7_layer: to_7_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F20>
+                , <&to 7>;
+
+to_8_layer: to_8_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F21>
+                , <&to 8>;
+
+to_9_layer: to_9_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F22>
+                , <&to 9>;
         };
-    };
+
+
 
     keymap {
         compatible = "zmk,keymap";
