@@ -62,6 +62,13 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
+to_0_layer: to_0_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp F13>
+                , <&to 0>;
+        };
     };
 
     keymap {
