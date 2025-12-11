@@ -45,11 +45,6 @@
             key-positions = <11 12 13>;
             bindings = <&to_0_layer>;
         };
-
-        tab-left {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <10 11>;
-        };
     };
 
     macros {
