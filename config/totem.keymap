@@ -127,13 +127,6 @@
             #binding-cells = <0>;
             bindings = <&kp F22 &to 9>;
         };
-
-        mo_1_layer: mo_1_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(F14) &mo 1>;
-            label = "MO_1_LAYER";
-        };
     };
 
     keymap {
@@ -161,7 +154,7 @@
            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
 &kp GRAVE  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH      &kp BSLH
-                                   &kp DEL      &mo_1_layer  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
+                                   &kp DEL      &kp LG(Z)    &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
 
