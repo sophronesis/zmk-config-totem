@@ -50,6 +50,11 @@
             bindings = <&kp TAB>;
             key-positions = <20 10>;
         };
+
+        cmb_- {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
