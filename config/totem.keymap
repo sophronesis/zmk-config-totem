@@ -113,19 +113,19 @@
         to_7_layer: to_7_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F20 &to 7>;
+            bindings = <&kp F20 &to 0>;
         };
 
         to_8_layer: to_8_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F21 &to 8>;
+            bindings = <&kp F21 &to 0>;
         };
 
         to_9_layer: to_9_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F22 &to 9>;
+            bindings = <&kp F22 &to 0>;
         };
     };
 
@@ -154,7 +154,7 @@
            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
 &kp GRAVE  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &kp SLASH            &mt DOUBLE_QUOTES BACKSLASH
-                                   &kp DEL      &kp LG(Z)    &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
+                                   &kp DEL      &lt 6 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
 
@@ -237,6 +237,17 @@
 &trans  &trans       &bt BT_PRV  &trans        &trans       &trans         &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &to_0_layer  &trans         &trans  &trans  &trans
             >;
+        };
+
+        additional_numeric {
+            bindings = <
+         &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8   &kp N9   &kp N0
+         &trans  &trans  &trans  &trans  &kp F6    &kp F7  &trans  &trans   &trans   &trans
+&kp TAB  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "ADD_NUM";
         };
     };
 };
