@@ -87,31 +87,31 @@
         to_2_layer: to_2_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F15) &to 2>;
+            bindings = <&kp LG(F15) &to 4>;
         };
 
         to_3_layer: to_3_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F16) &to 3>;
+            bindings = <&kp LG(F16) &to 2>;
         };
 
         to_4_layer: to_4_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F17) &to 4>;
+            bindings = <&kp LG(F17) &to 5>;
         };
 
         to_5_layer: to_5_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F18) &to 5>;
+            bindings = <&kp LG(F18) &to 7>;
         };
 
         to_6_layer: to_6_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F19) &to 6>;
+            bindings = <&kp LG(F19) &to 3>;
         };
 
         to_7_layer: to_7_layer {
@@ -157,8 +157,8 @@
             bindings = <
              &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 7 GRAVE  &lt 2 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 4 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                                     &kp DEL      &lt 6 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
+&lt 6 GRAVE  &lt 4 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 5 SLASH          &mt SINGLE_QUOTE BACKSLASH
+                                     &kp DEL      &lt 3 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
 
@@ -186,26 +186,37 @@
             >;
         };
 
-        misc {
-            bindings = <
-        &trans  &trans  &trans  &trans       &trans    &kp C_VOL_DN          &kp C_VOL_UP  &kp C_MUTE        &kp PRINTSCREEN  &trans
-        &trans  &trans  &trans  &trans       &trans    &kp C_PREV            &kp C_NEXT    &kp C_PLAY_PAUSE  &trans           &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP  &trans            &trans           &trans  &trans
-                        &trans  &to_1_layer  &trans    &trans                &to_3_layer   &trans
-            >;
-
-            label = "MISC";
-        };
-
         hollow_knight {
             bindings = <
         &trans  &kp TAB  &kp A   &kp S        &kp D     &trans  &trans          &kp UP_ARROW  &trans     &kp C_VOL_UP
         &trans  &kp F    &kp Z   &kp X        &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp C_VOL_DN
 &trans  &trans  &trans   &trans  &trans       &kp I     &trans  &trans          &trans        &trans     &trans        &trans
-                         &trans  &to_2_layer  &trans    &trans  &none           &trans
+                         &trans  &to_1_layer  &trans    &trans  &none           &trans
             >;
 
             label = "HK";
+        };
+
+        additional_numeric {
+            bindings = <
+         &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7     &kp N8     &kp N9   &kp N0
+         &trans  &trans  &trans  &trans  &kp F6    &kp F7  &trans     &trans     &trans   &trans
+&kp TAB  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F8  &kp F9     &kp F10    &kp F11  &kp F12  &trans
+                         &trans  &trans  &trans    &trans  &kp MINUS  &kp EQUAL
+            >;
+
+            label = "ADD_NUM";
+        };
+
+        misc {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN          &kp C_VOL_UP  &kp C_MUTE        &kp PRINTSCREEN  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp C_PREV            &kp C_NEXT    &kp C_PLAY_PAUSE  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP  &trans            &trans           &trans  &trans
+                        &trans  &trans  &trans    &trans                &trans        &trans
+            >;
+
+            label = "MISC";
         };
 
         mouse_layer {
@@ -217,6 +228,17 @@
             >;
 
             label = "MOU";
+        };
+
+        arrows_bt_profiles {
+            bindings = <
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans    &kp UP_ARROW  &trans     &trans
+        &trans        &trans        &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans    &trans        &trans     &trans  &bt BT_CLR
+                                    &trans        &trans        &trans          &trans  &trans    &trans
+            >;
+
+            label = "ARR_BT";
         };
 
         adjust_layer {
@@ -241,28 +263,6 @@
 &trans  &trans       &trans  &trans  &trans       &trans         &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                              &trans  &to_0_layer  &trans         &trans  &trans  &trans
             >;
-        };
-
-        additional_numeric {
-            bindings = <
-         &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7     &kp N8     &kp N9   &kp N0
-         &trans  &trans  &trans  &trans  &kp F6    &kp F7  &trans     &trans     &trans   &trans
-&kp TAB  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F8  &kp F9     &kp F10    &kp F11  &kp F12  &trans
-                         &trans  &trans  &trans    &trans  &kp MINUS  &kp EQUAL
-            >;
-
-            label = "ADD_NUM";
-        };
-
-        arrows_bt_profiles {
-            bindings = <
-        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans    &kp UP_ARROW  &trans     &trans
-        &trans        &trans        &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans    &trans        &trans     &trans  &bt BT_CLR
-                                    &trans        &trans        &trans          &trans  &trans    &trans
-            >;
-
-            label = "ARR_BT";
         };
     };
 };
