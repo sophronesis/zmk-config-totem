@@ -157,7 +157,7 @@
             bindings = <
              &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 7 GRAVE  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &kp SLASH            &mt SINGLE_QUOTE BACKSLASH
+&lt 7 GRAVE  &lt 2 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &kp SLASH            &mt SINGLE_QUOTE BACKSLASH
                                      &kp DEL      &lt 6 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
