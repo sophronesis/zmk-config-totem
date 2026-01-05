@@ -157,7 +157,7 @@
             bindings = <
              &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 7 GRAVE  &lt 2 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &kp SLASH            &mt SINGLE_QUOTE BACKSLASH
+&lt 7 GRAVE  &lt 2 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 4 SLASH          &mt SINGLE_QUOTE BACKSLASH
                                      &kp DEL      &lt 6 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
@@ -208,15 +208,15 @@
             label = "HK";
         };
 
-        numbers_mouse_layer {
+        mouse_layer {
             bindings = <
-              &trans          &trans          &mmv MOVE_UP    &trans           &msc SCRL_UP       &trans  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-              &kp LEFT_SHIFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &trans  &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_GUI  &to_0_layer     &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp SLASH
-                                              &mkp MB3        &mkp MB2         &mkp MB1           &trans  &kp RIGHT_SHIFT  &kp N0
+              &trans          &trans          &mmv MOVE_UP    &trans           &msc SCRL_UP       &trans  &trans  &trans  &trans  &trans
+              &kp LEFT_SHIFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &trans  &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &to_0_layer     &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans  &trans  &trans  &trans  &trans  &trans
+                                              &mkp MB3        &mkp MB2         &mkp MB1           &trans  &trans  &trans
             >;
 
-            label = "NUM_MOU";
+            label = "MOU";
         };
 
         adjust_layer {
