@@ -87,25 +87,25 @@
         to_2_layer: to_2_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F15) &to 5>;
+            bindings = <&kp LG(F15) &to 2>;
         };
 
         to_3_layer: to_3_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F16) &to 2>;
+            bindings = <&kp LG(F16) &to 3>;
         };
 
         to_4_layer: to_4_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F17) &to 6>;
+            bindings = <&kp LG(F17) &to 4>;
         };
 
         to_5_layer: to_5_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F18) &to 8>;
+            bindings = <&kp LG(F18) &to 5>;
         };
 
         to_6_layer: to_6_layer {
