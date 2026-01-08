@@ -155,9 +155,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
+             &lt 6 Q     &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 7 GRAVE  &lt 5 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 6 SLASH          &mt SINGLE_QUOTE BACKSLASH
+&lt 8 GRAVE  &lt 5 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 7 SLASH          &mt SINGLE_QUOTE BACKSLASH
                                      &kp DEL      &lt 4 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
             >;
         };
@@ -202,7 +202,7 @@
             bindings = <
              &kp Q    &kp W  &kp E    &kp R        &kp T        &kp Y    &kp U        &kp I      &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &kp A    &kp S  &kp D    &kp F        &kp G        &kp H    &kp J        &kp K      &kp L               &kp SEMICOLON
-&lt 7 GRAVE  &lt 5 Z  &kp X  &kp C    &kp V        &kp B        &kp N    &kp M        &kp COMMA  &kp DOT             &lt 6 SLASH          &mt SINGLE_QUOTE BACKSLASH
+&lt 8 GRAVE  &lt 5 Z  &kp X  &kp C    &kp V        &kp B        &kp N    &kp M        &kp COMMA  &kp DOT             &lt 7 SLASH          &mt SINGLE_QUOTE BACKSLASH
                              &kp DEL  &lt 4 LC(Z)  &kp SPACE    &kp RET  &to_0_layer  &kp BSPC
             >;
         };
@@ -227,6 +227,16 @@
             >;
 
             label = "MISC";
+        };
+
+        numpad {
+            label = "NUMP";
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_PLUS
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp SEMI
+                        &trans  &trans  &trans    &trans  &trans     &kp KP_NUMBER_0
+            >;
         };
 
         mouse_layer {
