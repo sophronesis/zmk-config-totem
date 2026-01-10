@@ -81,37 +81,37 @@
         to_1_layer: to_1_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F14) &to 1>;
+            bindings = <&kp LG(F14) &to 0>;
         };
 
         to_2_layer: to_2_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F15) &to 2>;
+            bindings = <&kp LG(F15) &to 1>;
         };
 
         to_3_layer: to_3_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F16) &to 3>;
+            bindings = <&kp LG(F16) &to 2>;
         };
 
         to_4_layer: to_4_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F17) &to 4>;
+            bindings = <&kp LG(F17) &to 5>;
         };
 
         to_5_layer: to_5_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F18) &to 5>;
+            bindings = <&kp LG(F18) &to 6>;
         };
 
         to_6_layer: to_6_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F19) &to 4>;
+            bindings = <&kp LG(F19) &to 5>;
         };
 
         to_7_layer: to_7_layer {
@@ -155,43 +155,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &lt 6 Q     &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
+             &lt 7 Q     &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 8 GRAVE  &lt 5 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 7 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                                     &kp DEL      &lt 4 LC(Z)  &kp SPACE    &kp RET  &to_1_layer  &kp BSPC
-            >;
-        };
-
-        navigation_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "NAVI";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-        &to_5_layer  &kp MINUS  &kp UP        &kp EQUAL    &kp LBRC    &kp RBRC  &kp KP_N7    &kp KP_N8        &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp LBKT    &kp RBKT  &kp KP_N4    &kp KP_N5        &kp KP_N6  &kp KP_MINUS
-&trans  &to_4_layer  &kp PG_UP  &kp CAPS      &kp PG_DN    &kp LPAR    &kp RPAR  &kp KP_N1    &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp SEMI
-                                &kp LEFT_GUI  &to_0_layer  &trans      &trans    &to_2_layer  &kp KP_NUMBER_0
+&lt 9 GRAVE  &lt 6 Z     &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
+                                     &kp DEL      &lt 5 LC(Z)  &kp SPACE    &kp RET  &mo 10       &kp BSPC
             >;
         };
 
         hollow_knight {
             bindings = <
-        &trans  &kp TAB  &kp A   &kp S        &kp D     &trans  &trans          &kp UP_ARROW  &trans     &kp C_VOL_UP
-        &trans  &kp F    &kp Z   &kp X        &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp C_VOL_DN
-&trans  &trans  &trans   &trans  &trans       &kp I     &trans  &trans          &trans        &trans     &trans        &trans
-                         &trans  &to_1_layer  &trans    &trans  &to_3_layer     &trans
+        &trans  &kp TAB  &kp A   &kp S   &kp D     &trans  &trans          &kp UP_ARROW  &trans     &kp C_VOL_UP
+        &trans  &kp F    &kp Z   &kp X   &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp C_VOL_DN
+&trans  &trans  &trans   &trans  &trans  &kp I     &trans  &trans          &trans        &trans     &trans        &trans
+                         &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
             label = "HK";
@@ -202,8 +178,43 @@
             bindings = <
              &kp Q    &kp W  &kp E    &kp R        &kp T        &kp Y    &kp U        &kp I      &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &kp A    &kp S  &kp D    &kp F        &kp G        &kp H    &kp J        &kp K      &kp L               &kp SEMICOLON
-&lt 8 GRAVE  &lt 5 Z  &kp X  &kp C    &kp V        &kp B        &kp N    &kp M        &kp COMMA  &kp DOT             &lt 7 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                             &kp DEL  &lt 4 LC(Z)  &kp SPACE    &kp RET  &to_0_layer  &kp BSPC
+&lt 9 GRAVE  &lt 6 Z  &kp X  &kp C    &kp V        &kp B        &kp N    &kp M        &kp COMMA  &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
+                             &kp DEL  &lt 5 LC(Z)  &kp SPACE    &kp RET  &to_0_layer  &kp BSPC
+            >;
+        };
+
+        gzdoom {
+            bindings = <
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp N7       &kp N8  &kp N9  &kp N0
+        &kp LCTRL     &trans        &kp W         &kp R         &trans    &trans  &trans       &trans  &trans  &trans
+&trans  &kp LSHIFT    &kp A         &kp S         &kp D         &trans    &trans  &trans       &trans  &trans  &trans  &trans
+                                    &kp ENTER     &trans        &kp E     &trans  &to_0_layer  &trans
+            >;
+
+            label = "GZD";
+        };
+
+        adjust_layer {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "ADJ";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃ BOOTLOAD  ┃ BT NEXT   ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃           ┃ BT PREV   ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+        &trans  &trans  &trans  &trans  &bootloader    &trans  &kp F7       &kp F8  &kp F9  &kp F12
+        &trans  &trans  &trans  &trans  &sys_reset     &trans  &kp F4       &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &kp F1       &kp F2  &kp F3  &kp F10  &trans
+                        &trans  &trans  &trans         &trans  &to_0_layer  &trans
             >;
         };
 
@@ -261,28 +272,15 @@
             label = "ARR_BT";
         };
 
-        adjust_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "ADJ";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ BOOTLOAD  ┃ BT NEXT   ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃           ┃ BT PREV   ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        layers_layer {
             bindings = <
-        &to_0_layer  &trans  &trans  &trans       &bootloader    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans       &trans  &trans  &trans       &sys_reset     &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &trans  &trans  &trans       &trans         &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                             &trans  &to_0_layer  &trans         &trans  &trans  &trans
+        &to_1_layer  &to_2_layer  &to_3_layer  &to_4_layer  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans       &trans       &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans       &trans       &trans    &trans  &trans  &trans
             >;
+
+            label = "LL";
         };
     };
 };
