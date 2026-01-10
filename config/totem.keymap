@@ -158,7 +158,7 @@
              &lt 7 Q     &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
 &lt 9 GRAVE  &lt 6 Z     &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                                     &kp DEL      &lt 5 LC(Z)  &kp ENTER    &kp SPACE  &mo 10       &kp BSPC
+                                     &kp DEL      &lt 5 LC(Z)  &kp SPACE    &kp ENTER  &mo 10       &kp BSPC
             >;
         };
 
@@ -179,7 +179,7 @@
              &kp Q    &kp W  &kp E    &kp R        &kp T        &kp Y      &kp U        &kp I      &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &kp A    &kp S  &kp D    &kp F        &kp G        &kp H      &kp J        &kp K      &kp L               &kp SEMICOLON
 &lt 9 GRAVE  &lt 6 Z  &kp X  &kp C    &kp V        &kp B        &kp N      &kp M        &kp COMMA  &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                             &kp DEL  &lt 5 LC(Z)  &kp ENTER    &kp SPACE  &to_0_layer  &kp BSPC
+                             &kp DEL  &lt 5 LC(Z)  &kp SPACE    &kp ENTER  &to_0_layer  &kp BSPC
             >;
         };
 
