@@ -158,7 +158,7 @@
              &lt 7 Q     &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
 &lt 9 GRAVE  &lt 6 Z     &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                                     &kp DEL      &lt 5 LC(Z)  &kp SPACE    &kp ENTER  &mo 10       &kp BSPC
+                                     &kp DEL      &mo 5        &kp SPACE    &kp ENTER  &mo 10       &kp BSPC
             >;
         };
 
@@ -211,9 +211,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &bootloader    &trans  &kp F7       &kp F8  &kp F9  &kp F12
-        &trans  &trans  &trans  &trans  &sys_reset     &trans  &kp F4       &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &kp F1       &kp F2  &kp F3  &kp F10  &trans
+        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans       &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &sys_reset     &trans  &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans       &trans  &trans  &trans  &trans
                         &trans  &trans  &trans         &trans  &to_0_layer  &trans
             >;
         };
