@@ -186,9 +186,9 @@
         gzdoom {
             bindings = <
         &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &mt NUMBER_8 NUMBER_3  &mt NUMBER_9 NUMBER_4  &mt NUMBER_0 NUMBER_5    &trans  &trans       &trans  &trans  &trans
-        &kp LCTRL              &trans                 &kp W                  &kp R                  &kp LEFT_BRACKET         &trans  &trans       &trans  &trans  &trans
+        &kp LCTRL              &kp Q                  &kp W                  &kp R                  &kp LEFT_BRACKET         &trans  &trans       &trans  &trans  &trans
 &trans  &kp LSHIFT             &kp A                  &kp S                  &kp D                  &kp RIGHT_BRACKET        &trans  &trans       &trans  &trans  &trans  &trans
-                                                      &kp ENTER              &trans                 &kp E                    &trans  &to_0_layer  &trans
+                                                      &kp ENTER              &kp V                  &kp E                    &trans  &to_0_layer  &trans
             >;
 
             label = "GZD";
