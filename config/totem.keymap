@@ -185,10 +185,10 @@
 
         gzdoom {
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp N7       &kp N8  &kp N9  &kp N0
-        &kp LCTRL     &trans        &kp W         &kp R         &trans    &trans  &trans       &trans  &trans  &trans
-&trans  &kp LSHIFT    &kp A         &kp S         &kp D         &trans    &trans  &trans       &trans  &trans  &trans  &trans
-                                    &kp ENTER     &trans        &kp E     &trans  &to_0_layer  &trans
+        &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &mt NUMBER_8 NUMBER_3  &mt NUMBER_9 NUMBER_4  &mt NUMBER_0 NUMBER_5    &trans  &trans       &trans  &trans  &trans
+        &kp LCTRL              &trans                 &kp W                  &kp R                  &trans                   &trans  &trans       &trans  &trans  &trans
+&trans  &kp LSHIFT             &kp A                  &kp S                  &kp D                  &trans                   &trans  &trans       &trans  &trans  &trans  &trans
+                                                      &kp ENTER              &trans                 &kp E                    &trans  &to_0_layer  &trans
             >;
 
             label = "GZD";
