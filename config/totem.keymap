@@ -149,9 +149,9 @@
 
         hollow_knight {
             bindings = <
-        &trans  &kp TAB  &kp A   &kp S   &kp D     &trans  &trans          &kp UP_ARROW  &trans     &kp C_VOL_UP
-        &trans  &kp F    &kp Z   &kp X   &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp C_VOL_DN
-&trans  &trans  &trans   &trans  &trans  &kp I     &trans  &trans          &trans        &trans     &trans        &trans
+        &trans  &kp TAB  &kp A   &kp S   &kp D     &trans  &trans          &kp UP_ARROW  &trans     &trans
+        &trans  &kp F    &kp Z   &kp X   &kp C     &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans  &trans   &trans  &trans  &kp I     &trans  &trans          &trans        &trans     &trans  &trans
                          &trans  &trans  &trans    &trans  &to_0_layer     &trans
             >;
 
@@ -205,10 +205,10 @@
 
         mouse_layer {
             bindings = <
-        &trans        &kp LG(A)       &mmv MOVE_UP    &kp LG(LS(A))    &msc SCRL_UP       &trans  &trans       &trans  &trans  &trans
-        &kp LEFT_GUI  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &trans  &trans       &trans  &trans  &trans
-&trans  &trans        &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans  &trans       &trans  &trans  &trans  &trans
-                                      &mkp MB3        &mkp MB2         &mkp MB1           &trans  &to_0_layer  &trans
+        &trans        &kp LG(A)       &mmv MOVE_UP    &kp LG(LS(A))    &msc SCRL_UP       &kp INSERT  &kp HOME     &kp PG_UP  &kp PSCRN    &kp SCROLLLOCK
+        &kp LEFT_GUI  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &kp DEL     &kp END      &kp PG_DN  &kp C_PAUSE  &kp CLCK
+&trans  &trans        &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans      &trans       &trans     &trans       &trans          &kp KP_NUMLOCK
+                                      &mkp MB3        &mkp MB2         &mkp MB1           &trans      &to_0_layer  &trans
             >;
 
             label = "MOU";
