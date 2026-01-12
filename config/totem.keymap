@@ -57,21 +57,6 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         to_0_layer: to_0_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -105,7 +90,7 @@
         to_5_layer: to_5_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F18) &to 0>;
+            bindings = <&kp LG(F18) &to 5>;
         };
 
         to_6_layer: to_6_layer {
@@ -155,10 +140,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &lt 7 Q     &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
+             &lt 8 Q     &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RCTRL K  &mt RALT L          &mt RGUI SEMI
-&lt 9 GRAVE  &lt 6 Z     &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                                     &kp DEL      &mo 5        &kp SPACE    &kp ENTER  &mo 10       &kp BSPC
+&lt 9 GRAVE  &lt 7 Z     &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT             &lt 5 SLASH          &mt SINGLE_QUOTE BACKSLASH
+                                     &kp DEL      &mo 6        &kp SPACE    &kp ENTER  &mo 10       &kp BSPC
             >;
         };
 
@@ -178,8 +163,8 @@
             bindings = <
              &kp Q    &kp W  &kp E    &kp R        &kp T        &kp Y      &kp U        &kp I      &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P
              &kp A    &kp S  &kp D    &kp F        &kp G        &kp H      &kp J        &kp K      &kp L               &kp SEMICOLON
-&lt 9 GRAVE  &lt 6 Z  &kp X  &kp C    &kp V        &kp B        &kp N      &kp M        &kp COMMA  &kp DOT             &lt 8 SLASH          &mt SINGLE_QUOTE BACKSLASH
-                             &kp DEL  &lt 5 LC(Z)  &kp SPACE    &kp ENTER  &to_0_layer  &kp BSPC
+&lt 9 GRAVE  &lt 7 Z  &kp X  &kp C    &kp V        &kp B        &kp N      &kp M        &kp COMMA  &kp DOT             &lt 5 SLASH          &mt SINGLE_QUOTE BACKSLASH
+                             &kp DEL  &lt 6 LC(Z)  &kp SPACE    &kp ENTER  &to_0_layer  &kp BSPC
             >;
         };
 
@@ -218,6 +203,17 @@
             >;
         };
 
+        mouse_layer {
+            bindings = <
+        &trans        &kp LG(A)       &mmv MOVE_UP    &kp LG(LS(A))    &msc SCRL_UP       &trans  &trans       &trans  &trans  &trans
+        &kp LEFT_GUI  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &trans  &trans       &trans  &trans  &trans
+&trans  &trans        &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans  &trans       &trans  &trans  &trans  &trans
+                                      &mkp MB3        &mkp MB2         &mkp MB1           &trans  &to_0_layer  &trans
+            >;
+
+            label = "MOU";
+        };
+
         additional_numeric {
             bindings = <
          &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6     &kp N7     &kp N8   &kp N9   &kp N0
@@ -250,17 +246,6 @@
             >;
         };
 
-        mouse_layer {
-            bindings = <
-              &trans          &kp LG(A)       &mmv MOVE_UP    &kp LG(LS(A))    &msc SCRL_UP       &trans  &trans  &trans  &trans  &trans
-              &kp LEFT_SHIFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &to_0_layer     &trans          &trans          &msc SCRL_LEFT   &msc SCRL_RIGHT    &trans  &trans  &trans  &trans  &trans  &trans
-                                              &mkp MB3        &mkp MB2         &mkp MB1           &trans  &trans  &trans
-            >;
-
-            label = "MOU";
-        };
-
         arrows_bt_profiles {
             bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PG_UP  &trans    &kp UP_ARROW  &trans     &trans
@@ -274,10 +259,10 @@
 
         layers_layer {
             bindings = <
-        &to_1_layer  &to_2_layer  &to_3_layer  &to_4_layer  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans       &trans       &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans       &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans       &trans       &trans    &trans  &trans  &trans
+        &to_1_layer  &to_2_layer  &to_3_layer  &to_4_layer  &to_5_layer    &trans  &trans  &trans  &trans  &trans
+        &trans       &trans       &trans       &trans       &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans       &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans       &trans       &trans         &trans  &trans  &trans
             >;
 
             label = "LL";
