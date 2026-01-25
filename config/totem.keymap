@@ -196,10 +196,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &mt NUMBER_6 NUMBER_1  &mt N7 NUMBER_2  &mt N8 NUMBER_3   &mt N9 NUMBER_4  &mt N0 N5    &trans  &trans       &trans  &trans  &trans
-       &mt LEFT_SHIFT C       &kp Q            &kp W             &kp E            &kp R        &trans  &trans       &trans  &trans  &trans
-&kp P  &mt Z V                &kp A            &kp S             &kp D            &kp F        &trans  &trans       &trans  &trans  &trans  &trans
-                                               &kp LEFT_CONTROL  &kp M            &kp SPACE    &trans  &to_0_layer  &trans
+       &kp N1            &kp N2  &kp N3            &kp N4  &kp N5       &kp N6  &kp N7       &kp N8  &kp N9  &kp N0
+       &mt LEFT_SHIFT C  &kp Q   &kp W             &kp E   &kp R        &trans  &trans       &trans  &trans  &trans
+&kp P  &mt Z V           &kp A   &kp S             &kp D   &kp F        &trans  &trans       &trans  &trans  &trans  &trans
+                                 &kp LEFT_CONTROL  &kp M   &kp SPACE    &trans  &to_0_layer  &trans
             >;
         };
 
