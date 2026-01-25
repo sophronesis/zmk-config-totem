@@ -198,7 +198,7 @@
             bindings = <
        &mt NUMBER_6 NUMBER_1  &mt N7 NUMBER_2  &mt N8 NUMBER_3   &mt N9 NUMBER_4  &mt N0 N5    &trans  &trans       &trans  &trans  &trans
        &kp C                  &kp Q            &kp W             &kp E            &kp R        &trans  &trans       &trans  &trans  &trans
-&kp P  &kp V                  &kp A            &kp S             &kp D            &kp F        &trans  &trans       &trans  &trans  &trans  &trans
+&kp P  &mt V Z                &kp A            &kp S             &kp D            &kp F        &trans  &trans       &trans  &trans  &trans  &trans
                                                &kp LEFT_CONTROL  &kp M            &kp SPACE    &trans  &to_0_layer  &trans
             >;
         };
